@@ -31,4 +31,4 @@ A shared Platform (AWS, Kubernetes) provided and operated by a central Platform 
 | Customer (e.g. Multitenant platform) | Business organization | namespace<br>pod<br>deployment | customer | [customer-id]<br>[customer-name] | customer | Yes | Yes | Yes | No | 2-walk |
 
 
-![Label Dictionary](/assets/images/cost-allocation-label-dictionary.png
+![Label Dictionary](/assets/images/cost-allocation-label-dictionary.png)
