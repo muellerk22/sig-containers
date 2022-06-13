@@ -1,25 +1,242 @@
-# Container Cost Allocation
+# Container Label Dictionary
 
-Allocation of resource is a goal of FinOps. This section will detail common use case around container applications.
+This label dictionary os to support the goal of FinOps to support the allocation of resource is. The label dictionary should serve as inspiration for labels and schemas, also for mapping different others (alias column) with similar context to one distinct (label column). It’s “the” place for new labels and their alias contributions from where people can and should create their own label set from. The finops.org label schema that you can find here is one of this.
 
-# Selected Use Case: Shared Platform for Product Teams
+# Overview
 
-A shared Platform (AWS, Kubernetes) provided and operated by a central Platform Engineering Team that is used as the deployment target for 20+ Teams that develop business capabilities on it by also using external cloud Resources (S3,RDS,DynamoDB,Lambda and others).
+At the heart of the label is to support a wide variety of Use Case involving four personas across the maturity model (crawl, walk, and run).
 
-![Selected Use Case](/assets/images/cost-allocation-chared-platform-team.png)
+The four personas are:
 
-## Story and Personas
+- Executives
+- Business/Product Owners
+- Finance/Procurement
+- Engineering and Operations
 
-- During a board meeting the **Executives** were speaking about company goals and strategies and wondered what would be the impact of cloud costs in correlation to a new product launch and the continuous user growth, **Finance** was called in and they explained their evenly distributed allocation model across teams for the cloud invoice that has been applied since months, but it lead too many questions open also it was found to be very inaccurate so it was decided to improve that.
+# Dictionary
 
-- As the Finance Team on their own were struggling how to start with more accurate cost allocation of cloud costs they reached out to the **Business** (Product Management and Owners) but they were not able to answer it either. Finally there was a cost transparency initiative triggered on Program level which increased the priority for implementing cost transparency throughout the Platform.
+## Cost-center
 
-- In the initial Kickoff the task was given to the **Platform Engineering Team and Development Teams** so they should think of how to make the costs as transparent as needed for the business so they are able to report along with their value stream out of analytics data to the digital controlling department for mapping costs to value.
+Cost-centers aligns to a business structure and help define the various areas that are driving the company expenses. 
 
+<table class="center">
+<tr>
+<td>Context</td>
+<td>Business organization</td>
+</tr>
+<tr>
+<td>Common Resources to Label</td>
+<td>namespace, pod, deployment</td>
+</tr>
+<tr>
+<td>Label alias
+<td>psp-element, cost-center 
+</tr>
+<tr>
+<td>Example Values</td>
+<td>[alpha-numeric codes]</td>
+</tr>
+<tr>
+<td>Personas</td>
+<td>Finance/Procurement</td>
+</tr>
+<tr>
+<td>Maturity Level</td>
+<td>Crawl</td>
+</tr>
+</table>
+
+
+## Application
+The Label support organizing your spend around the application architecture hierarchy
+<table>
+<tr>
+<td>Context</td>
+<td>App / Service Hierarchy</td>
+</tr>
+<tr>
+<td>Common Resources to Label</td>
+<td>namespace, pod, deployment</td>
+</tr>
+<tr>
+<td>Label alias
+<td>application<br>app<br>application-name<br>application-id  </td>
+</tr>
+<tr>
+<td>Example Values</td>
+<td>ACME Fitness</td>
+</tr>
+<tr>
+<td>Personas</td>
+<td>Business / Product Owner<br>Finance / Procurement<br>Engineering and Operations</td>
+</tr>
+<tr>
+<td>Maturity Level</td>
+<td>Crawl</td>
+</tr>
+</table>
+
+## Team
+Team Label help identify groups within an organization that are responsible for this spend.
+<table>
+<tr>
+<td>Context</td>
+<td>Business organization</td>
+</tr>
+<tr>
+<td>Common Resources to Label</td>
+<td>namespace, pod, deployment</td>
+</tr>
+<tr>
+<td>Label alias
+<td>team<br>squad<br>group<br>owner<br>maintainer<br>contact</td>
+</tr>
+</tr>
+<tr>
+<td>Example Values</td>
+<td>[team name]<br>[team id]</td>
+</tr>
+<tr>
+<td>Personas</td>
+<td>Executives<br>Business / Product Owner<br>Finance / Procurement<br>Engineering and Operations</td>
+</tr>
+<tr>
+<td>Maturity Level</td>
+<td>Crawl</td>
+</tr>
+</table>
+
+## product
+Product label organizes spend to align on the "products" a firm has and help organize application and service that support the product.
+<table>
+<tr>
+<td>Context</td>
+<td>App / Service Hierarchy</td>
+</tr>
+<tr>
+<td>Common Resources to Label</td>
+<td>namespace, pod, deployment</td>
+</tr>
+<tr>
+<td>Label alias
+<td>product<br>workload<br>project</td>
+</tr>
+</tr>
+<tr>
+<td>Example Values</td>
+<td>ACME Fitness Store<br>ACME Fitness + Video Streaming</td>
+</tr>
+<tr>
+<td>Personas</td>
+<td>Business / Product Owner<br>Finance / Procurement</td>
+</tr>
+<tr>
+<td>Maturity Level</td>
+<td>Walk</td>
+</tr>
+</table>
+
+## department
+Department applies to business organization. The meaning is very organization dependent.
+<table>
+<tr>
+    <td>Context</td>
+    <td>Business organization</td>
+</tr>
+<tr>
+    <td>Common Resources to Label</td>
+    <td>namespace, pod, deployment</td>
+</tr>
+<tr>
+    <td>Label alias
+    <td>business-unit<br> department<br> business-domain<br>domain</td>
+</tr>
+<tr>
+    <td>Example Values</td>
+    <td>retail BU<br> streaming BU</td>
+</tr>
+<tr>
+    <td>Personas</td>
+    <td>Business / Product Owner<br>Finance / Procurement</td>
+</tr>
+<tr>
+    <td>Maturity Level</td>
+    <td>Walk</td>
+</tr>
+</table>
+
+## environment
+Environment support calculating Cost of Good Sold (COGS) and aligns how organization deploy code. e.g. production versus development
+<table>
+<tr>
+    <td>Context</td>
+    <td>Platform + Operations</td>
+</tr>
+<tr>
+    <td>Common Resources to Label</td>
+    <td>namespace, pod, deployment</td>
+</tr>
+<tr>
+    <td>Label alias
+    <td>stage<br>environment<br>env</td>
+</tr>
+<tr>
+    <td>Example Values</td>
+    <td>dev<br> staging<br>prod</td>
+</tr>
+<tr>
+    <td>Personas</td>
+    <td>Business / Product Owner<br>Engineering and Operations</td>
+</tr>
+<tr>
+    <td>Maturity Level</td>
+    <td>Walk</td>
+</tr>
+</table>
+
+## customer
+Customer label can identify that that are consuming a product/service.  This can support multi-tenant environment as well as silo tenant environments
+<table>
+<tr>
+    <td>Context</td>
+    <td>Business organization</td>
+</tr>
+<tr>
+    <td>Common Resources to Label</td>
+    <td>namespace, pod, deployment</td>
+</tr>
+<tr>
+    <td>Label alias
+    <td>customer</td>
+</tr>
+<tr>
+    <td>Example Values</td>
+    <td>[customer-id]<br>[customer-name]</td>
+</tr>
+<tr>
+    <td>Personas</td>
+    <td>Business / Product Owner<br>Engineering and Operations</td>
+</tr>
+<tr>
+    <td>Maturity Level</td>
+    <td>Walk</td>
+</tr>
+</table>
+
+## service
+Service label adds a layer to app/service hierarchy around how firms  organize product/applications into sub-components.
+
+## component
+Component label adds a layer to app/service hierarchy around how firms  organize "services."
+
+## tech-stack
+Tech-Stack help bring context of spend to the view of platform or operations
+
+
+# Dictionary as Table
 
 | Description | Context | Common <br>Resource(s) to label | label alias | Example Values | label | Executive | Business/Product Owner | Finance/Procurement | Engineering and Operations | Maturity |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Application | App / Service Hierarchy | namespace<br>pod<br>deployment | application<br>app<br>application-name<br>application-id | ACME Fitness | application | No | Yes | Yes | Yes | 1-crawl |
 | Product | App / Service Hierarchy | namespace<br>pod<br>deployment | product<br>workload<br>project | ACME Fitness Store<br>ACME Fitness+ Video Streaming | product | No | Yes | Yes | No | 2-walk |
 | Service | App / Service Hierarchy | pod<br>deployment | service<br>service-id | Point of Sale<br>Store Shopping Cart<br>Store Catalog | service | No | No | Yes | Yes | 3-run |
 | Microservice / Component / Function | App / Service Hierarchy | namespace,pod | component<br>tier | database<br>storage | component | No | Yes | No | Yes | 3-run |
@@ -30,5 +247,4 @@ A shared Platform (AWS, Kubernetes) provided and operated by a central Platform 
 | Technology Stack by Purpose | Platform + Operations | namespace<br>pod<br>deployment | stack<br>servicegroup | observability<br>build-tools<br>automation<br>security | tech-stack | No | Yes | Yes | Yes | 3-run |
 | Customer (e.g. Multitenant platform) | Business organization | namespace<br>pod<br>deployment | customer | [customer-id]<br>[customer-name] | customer | Yes | Yes | Yes | No | 2-walk |
 
-
-![Label Dictionary](/assets/images/cost-allocation-label-dictionary.png)
+![Label Dictionary](/assets/images/cost-allocation-label-dictionary.png
