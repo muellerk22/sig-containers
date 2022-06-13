@@ -318,18 +318,4 @@ Tech-Stack help bring context of spend to the view of platform or operations by 
 </tr>
 </table>
 
-# Dictionary as Table
 
-| Description | Context | Common <br>Resource(s) to label | label alias | Example Values | label | Executive | Business/Product Owner | Finance/Procurement | Engineering and Operations | Maturity |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Product | App / Service Hierarchy | namespace<br>pod<br>deployment | product<br>workload<br>project | ACME Fitness Store<br>ACME Fitness+ Video Streaming | product | No | Yes | Yes | No | 2-walk |
-| Service | App / Service Hierarchy | pod<br>deployment | service<br>service-id | Point of Sale<br>Store Shopping Cart<br>Store Catalog | service | No | No | Yes | Yes | 3-run |
-| Microservice / Component / Function | App / Service Hierarchy | namespace,pod | component<br>tier | database<br>storage | component | No | Yes | No | Yes | 3-run |
-| Business Unit / Department | Business organization | namespace<br>pod<br>deployment | business-unit<br>department<br>business-domain<br>domain | retail BU<br>streaming BU | department | No | Yes | Yes | No | 2-walk |
-| Cost Center | Business organization | namespace<br>pod<br>deployment | psp-element<br>cost-center | [alpha-numeric codes] | cost-center | No | No | Yes | No | 1-crawl |
-| Team | Business organization | namespace<br>pod<br>deployment | team<br>squad<br>group<br>owner<br>maintainer<br>contact | [team name]<br>[team id] | team | Yes | Yes | Yes | Yes | 1-crawl |
-| Stage / Environment | Platform + Operations | namespace<br>pod<br>deployment | stage<br>environment<br>env | dev<br>staging<br>prod | environment | No | Yes | No | Yes | 2-walk |
-| Technology Stack by Purpose | Platform + Operations | namespace<br>pod<br>deployment | stack<br>servicegroup | observability<br>build-tools<br>automation<br>security | tech-stack | No | Yes | Yes | Yes | 3-run |
-| Customer (e.g. Multitenant platform) | Business organization | namespace<br>pod<br>deployment | customer | [customer-id]<br>[customer-name] | customer | Yes | Yes | Yes | No | 2-walk |
-
-![Label Dictionary](/assets/images/cost-allocation-label-dictionary.png
