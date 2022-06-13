@@ -15,6 +15,34 @@ The four personas are:
 
 # Dictionary
 
+## Application
+The Label support organizing your spend around the application architecture hierarchy
+<table>
+<tr>
+    <td>Context</td>
+    <td>App / Service Hierarchy</td>
+</tr>
+<tr>
+    <td>Common Resources to Label</td>
+    <td>namespace, pod, deployment</td>
+</tr>
+<tr>
+    <td>Label alias
+    <td>application<br>app<br>application-name<br>application-id  </td>
+</tr>
+<tr>
+    <td>Example Values</td>
+    <td>ACME Fitness</td>
+</tr>
+<tr>
+    <td>Personas</td>
+    <td>Business / Product Owner<br>Finance / Procurement<br>Engineering and Operations</td>
+</tr>
+<tr>
+    <td>Maturity Level</td>
+    <td>Crawl</td>
+</tr>
+</table>
 ## Cost-center
 
 Cost-centers aligns to a business structure and help define the various areas that are driving the company expenses. 
@@ -46,35 +74,6 @@ Cost-centers aligns to a business structure and help define the various areas th
 </tr>
 </table>
 
-
-## Application
-The Label support organizing your spend around the application architecture hierarchy
-<table>
-<tr>
-<td>Context</td>
-<td>App / Service Hierarchy</td>
-</tr>
-<tr>
-<td>Common Resources to Label</td>
-<td>namespace, pod, deployment</td>
-</tr>
-<tr>
-<td>Label alias
-<td>application<br>app<br>application-name<br>application-id  </td>
-</tr>
-<tr>
-<td>Example Values</td>
-<td>ACME Fitness</td>
-</tr>
-<tr>
-<td>Personas</td>
-<td>Business / Product Owner<br>Finance / Procurement<br>Engineering and Operations</td>
-</tr>
-<tr>
-<td>Maturity Level</td>
-<td>Crawl</td>
-</tr>
-</table>
 
 ## Team
 Team Label help identify groups within an organization that are responsible for this spend.
@@ -137,7 +136,7 @@ Product label organizes spend to align on the "products" a firm has and help org
 </table>
 
 ## department
-Department applies to business organization. The meaning is very organization dependent.
+Department applies to business organization. Some organization use terms like Business Unit. The meaning is very organization dependent.
 <table>
 <tr>
     <td>Context</td>
@@ -225,12 +224,91 @@ Customer label can identify that that are consuming a product/service.  This can
 
 ## service
 Service label adds a layer to app/service hierarchy around how firms  organize product/applications into sub-components.
+<table>
+<tr>
+    <td>Context</td>
+    <td>App / Service Hierarchy</td>
+</tr>
+<tr>
+    <td>Common Resources to Label</td>
+    <td>pod, deployment</td>
+</tr>
+<tr>
+    <td>Label alias
+    <td>service<br>service-id</td>
+</tr>
+<tr>
+    <td>Example Values</td>
+    <td>Point of Sale<br>Store Shopping Cart<br>Store Catalog</td>
+</tr>
+<tr>
+    <td>Personas</td>
+    <td>Finance/Procurement<br>Engineering and Operations</td>
+</tr>
+<tr>
+    <td>Maturity Level</td>
+    <td>run</td>
+</tr>
+</table>
 
 ## component
-Component label adds a layer to app/service hierarchy around how firms  organize "services."
+Component label adds a layer to app/service hierarchy around how firms  organize "Microservice / Component / Function"
+<table>
+<tr>
+    <td>Context</td>
+    <td>App / Service Hierarchy</td>
+</tr>
+<tr>
+    <td>Common Resources to Label</td>
+    <td>namespace, pod</td>
+</tr>
+<tr>
+    <td>Label alias
+    <td>component<br>tier</td>
+</tr>
+<tr>
+    <td>Example Values</td>
+    <td>database<br>storage</td>
+</tr>
+<tr>
+    <td>Personas</td>
+    <td>Business / Product Owner<br>Engineering and Operations</td>
+</tr>
+<tr>
+    <td>Maturity Level</td>
+    <td>run</td>
+</tr>
+</table>
+
 
 ## tech-stack
-Tech-Stack help bring context of spend to the view of platform or operations
+Tech-Stack help bring context of spend to the view of platform or operations by purpose
+<table>
+<tr>
+    <td>Context</td>
+    <td>Platform + Operations</td>
+</tr>
+<tr>
+    <td>Common Resources to Label</td>
+    <td>namespace, pod, deployment</td>
+</tr>
+<tr>
+    <td>Label alias
+    <td>stack<br>servicegroup</td>
+</tr>
+<tr>
+    <td>Example Values</td>
+    <td>observability<br>build-tools<br>automation<br> security</td>
+</tr>
+<tr>
+    <td>Personas</td>
+    <td>Business / Product Owner<br>Finance / Procurement<br>Engineering and Operations</td>
+</tr>
+<tr>
+    <td>Maturity Level</td>
+    <td>run</td>
+</tr>
+</table>
 
 
 # Dictionary as Table
