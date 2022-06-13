@@ -2,7 +2,7 @@
 
 This label dictionary os to support the goal of FinOps to support the allocation of resource is. The label dictionary should serve as inspiration for labels and schemas, also for mapping different others (alias column) with similar context to one distinct (label column). It’s “the” place for new labels and their alias contributions from where people can and should create their own label set from. The finops.org label schema that you can find here is one of this.
 
-# Overview
+## Overview
 
 At the heart of the label is to support a wide variety of Use Case involving four personas across the maturity model (crawl, walk, and run).
 
@@ -13,9 +13,10 @@ The four personas are:
 - Finance/Procurement
 - Engineering and Operations
 
-# Dictionary
+## Dictionary
 
-## Application
+### Application
+
 The Label support organizing your spend around the application architecture hierarchy
 <table>
 <tr>
@@ -43,11 +44,12 @@ The Label support organizing your spend around the application architecture hier
     <td>Crawl</td>
 </tr>
 </table>
-## Cost-center
 
-Cost-centers aligns to a business structure and help define the various areas that are driving the company expenses. 
+### Cost-center
 
-<table class="center">
+Cost-centers aligns to a business structure and help define the various areas that are driving the company expenses.
+
+<table>
 <tr>
 <td>Context</td>
 <td>Business organization</td>
@@ -58,7 +60,7 @@ Cost-centers aligns to a business structure and help define the various areas th
 </tr>
 <tr>
 <td>Label alias
-<td>psp-element, cost-center 
+<td>psp-element, cost-center
 </tr>
 <tr>
 <td>Example Values</td>
@@ -74,8 +76,8 @@ Cost-centers aligns to a business structure and help define the various areas th
 </tr>
 </table>
 
+### Team
 
-## Team
 Team Label help identify groups within an organization that are responsible for this spend.
 <table>
 <tr>
@@ -105,7 +107,8 @@ Team Label help identify groups within an organization that are responsible for 
 </tr>
 </table>
 
-## product
+### Product
+
 Product label organizes spend to align on the "products" a firm has and help organize application and service that support the product.
 <table>
 <tr>
@@ -135,7 +138,8 @@ Product label organizes spend to align on the "products" a firm has and help org
 </tr>
 </table>
 
-## department
+### Department
+
 Department applies to business organization. Some organization use terms like Business Unit. The meaning is very organization dependent.
 <table>
 <tr>
@@ -164,7 +168,8 @@ Department applies to business organization. Some organization use terms like Bu
 </tr>
 </table>
 
-## environment
+### Environment
+
 Environment support calculating Cost of Good Sold (COGS) and aligns how organization deploy code. e.g. production versus development
 <table>
 <tr>
@@ -193,7 +198,8 @@ Environment support calculating Cost of Good Sold (COGS) and aligns how organiza
 </tr>
 </table>
 
-## customer
+### Customer
+
 Customer label can identify that that are consuming a product/service.  This can support multi-tenant environment as well as silo tenant environments
 <table>
 <tr>
@@ -222,7 +228,8 @@ Customer label can identify that that are consuming a product/service.  This can
 </tr>
 </table>
 
-## service
+### Service
+
 Service label adds a layer to app/service hierarchy around how firms  organize product/applications into sub-components.
 <table>
 <tr>
@@ -251,7 +258,8 @@ Service label adds a layer to app/service hierarchy around how firms  organize p
 </tr>
 </table>
 
-## component
+### Component
+
 Component label adds a layer to app/service hierarchy around how firms  organize "Microservice / Component / Function"
 <table>
 <tr>
@@ -280,8 +288,8 @@ Component label adds a layer to app/service hierarchy around how firms  organize
 </tr>
 </table>
 
+### Tech-stack
 
-## tech-stack
 Tech-Stack help bring context of spend to the view of platform or operations by purpose
 <table>
 <tr>
@@ -309,7 +317,6 @@ Tech-Stack help bring context of spend to the view of platform or operations by 
     <td>run</td>
 </tr>
 </table>
-
 
 # Dictionary as Table
 
