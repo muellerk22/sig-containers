@@ -13,9 +13,26 @@ The four personas are:
 - Finance/Procurement
 - Engineering and Operations
 
+<table>
+<tr>
+    <th>Label</th>
+    <th>Maturity Level</th>
+</tr>
+<tr> <td>application</td> <td>1 - Crawl</td> </tr>
+<tr> <td>cost-center</td> <td>1 - Crawl</td> </tr>
+<tr> <td>team</td> <td>1 - Crawl</td> </tr>
+<tr> <td>product</td> <td>2 - Walk</td></tr>
+<tr> <td>department</td> <td>2 - Walk</td></tr>
+<tr> <td>environment</td> <td>2 - Walk</td></tr>
+<tr> <td>customer</td> <td>2 - Walk</td></tr>
+<tr> <td>service</td> <td>3 - Run</td></tr>
+<tr> <td>component</td> <td>3 - Run</td></tr>
+<tr> <td>tech-stack</td> <td>3 - Run</td></tr>
+</table>
+
 ## Dictionary
 
-### Application
+### application
 
 The Label support organizing your spend around the application architecture hierarchy
 <table>
@@ -45,7 +62,7 @@ The Label support organizing your spend around the application architecture hier
 </tr>
 </table>
 
-### Cost-center
+### cost-center
 
 Cost-centers aligns to a business structure and help define the various areas that are driving the company expenses.
 
@@ -76,7 +93,7 @@ Cost-centers aligns to a business structure and help define the various areas th
 </tr>
 </table>
 
-### Team
+### team
 
 Team Label help identify groups within an organization that are responsible for this spend.
 <table>
@@ -107,7 +124,7 @@ Team Label help identify groups within an organization that are responsible for 
 </tr>
 </table>
 
-### Product
+### product
 
 Product label organizes spend to align on the "products" a firm has and help organize application and service that support the product.
 <table>
@@ -138,7 +155,7 @@ Product label organizes spend to align on the "products" a firm has and help org
 </tr>
 </table>
 
-### Department
+### department
 
 Department applies to business organization. Some organization use terms like Business Unit. The meaning is very organization dependent.
 <table>
@@ -168,7 +185,7 @@ Department applies to business organization. Some organization use terms like Bu
 </tr>
 </table>
 
-### Environment
+### environment
 
 Environment support calculating Cost of Good Sold (COGS) and aligns how organization deploy code. e.g. production versus development
 <table>
@@ -198,7 +215,7 @@ Environment support calculating Cost of Good Sold (COGS) and aligns how organiza
 </tr>
 </table>
 
-### Customer
+### customer
 
 Customer label can identify that that are consuming a product/service.  This can support multi-tenant environment as well as silo tenant environments
 <table>
@@ -228,7 +245,7 @@ Customer label can identify that that are consuming a product/service.  This can
 </tr>
 </table>
 
-### Service
+### service
 
 Service label adds a layer to app/service hierarchy around how firms  organize product/applications into sub-components.
 <table>
@@ -258,7 +275,7 @@ Service label adds a layer to app/service hierarchy around how firms  organize p
 </tr>
 </table>
 
-### Component
+### component
 
 Component label adds a layer to app/service hierarchy around how firms  organize "Microservice / Component / Function"
 <table>
@@ -288,7 +305,7 @@ Component label adds a layer to app/service hierarchy around how firms  organize
 </tr>
 </table>
 
-### Tech-stack
+### tech-stack
 
 Tech-Stack help bring context of spend to the view of platform or operations by purpose
 <table>
