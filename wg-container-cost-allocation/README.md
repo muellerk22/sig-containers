@@ -4,7 +4,7 @@ This label dictionary os to support the goal of FinOps to support the allocation
 
 ## Overview
 
-At the heart of the label is to support a wide variety of Use Case involving four personas across the maturity model (crawl, walk, and run).
+At the heart of the label is to support a wide variety of Use Case involving four personas across the maturity model.
 
 The four personas are:
 
@@ -12,6 +12,12 @@ The four personas are:
 - Business/Product Owners
 - Finance/Procurement
 - Engineering and Operations
+
+The labels are also broken into the three maturity levels. This give guidance on where to start.
+
+1) Crawl
+2) Walk
+3) Run
 
 ## Dictionary
 
@@ -41,7 +47,7 @@ The Label support organizing your spend around application architecture hierarch
 </tr>
 <tr>
     <td>Maturity Level</td>
-    <td>Crawl</td>
+    <td>1 - Crawl</td>
 </tr>
 </table>
 
@@ -72,7 +78,7 @@ Cost-centers aligns to a business structure and help define the various areas th
 </tr>
 <tr>
 <td>Maturity Level</td>
-<td>Crawl</td>
+<td>1 - Crawl</td>
 </tr>
 </table>
 
@@ -103,7 +109,7 @@ Team Label help identify groups within an organization that are responsible for 
 </tr>
 <tr>
 <td>Maturity Level</td>
-<td>Crawl</td>
+<td>1 - Crawl</td>
 </tr>
 </table>
 
@@ -134,7 +140,7 @@ Product label organizes spend to align on the "products" a firm customer consume
 </tr>
 <tr>
 <td>Maturity Level</td>
-<td>Walk</td>
+<td>2 - Walk</td>
 </tr>
 </table>
 
@@ -164,7 +170,7 @@ Department applies to business organization. Some organization use terms like Bu
 </tr>
 <tr>
     <td>Maturity Level</td>
-    <td>Walk</td>
+    <td>2 - Walk</td>
 </tr>
 </table>
 
@@ -194,7 +200,7 @@ Environment support calculating Cost of Good Sold (COGS) and aligns how organiza
 </tr>
 <tr>
     <td>Maturity Level</td>
-    <td>Walk</td>
+    <td>2 - Walk</td>
 </tr>
 </table>
 
@@ -224,7 +230,7 @@ Customer label can identify that that are consuming a product/service.  This can
 </tr>
 <tr>
     <td>Maturity Level</td>
-    <td>Walk</td>
+    <td>2 - Walk</td>
 </tr>
 </table>
 
@@ -254,7 +260,7 @@ Service label adds a layer to app/service hierarchy around how firms  organize p
 </tr>
 <tr>
     <td>Maturity Level</td>
-    <td>run</td>
+    <td>3 - Run</td>
 </tr>
 </table>
 
@@ -284,7 +290,7 @@ Component label adds a layer to app/service hierarchy around how firms organize 
 </tr>
 <tr>
     <td>Maturity Level</td>
-    <td>run</td>
+    <td>3 - Run</td>
 </tr>
 </table>
 
@@ -314,6 +320,6 @@ Tech-Stack help bring context of spend to the view of platform or operations by 
 </tr>
 <tr>
     <td>Maturity Level</td>
-    <td>run</td>
+    <td>3 - Run</td>
 </tr>
 </table>
