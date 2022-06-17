@@ -13,28 +13,11 @@ The four personas are:
 - Finance/Procurement
 - Engineering and Operations
 
-<table>
-<tr>
-    <th>Label</th>
-    <th>Maturity Level</th>
-</tr>
-<tr> <td>application</td> <td>1 - Crawl</td> </tr>
-<tr> <td>cost-center</td> <td>1 - Crawl</td> </tr>
-<tr> <td>team</td> <td>1 - Crawl</td> </tr>
-<tr> <td>product</td> <td>2 - Walk</td></tr>
-<tr> <td>department</td> <td>2 - Walk</td></tr>
-<tr> <td>environment</td> <td>2 - Walk</td></tr>
-<tr> <td>customer</td> <td>2 - Walk</td></tr>
-<tr> <td>service</td> <td>3 - Run</td></tr>
-<tr> <td>component</td> <td>3 - Run</td></tr>
-<tr> <td>tech-stack</td> <td>3 - Run</td></tr>
-</table>
-
 ## Dictionary
 
 ### application
 
-The Label support organizing your spend around the application architecture hierarchy
+The Label support organizing your spend around application architecture hierarchy
 <table>
 <tr>
     <td>Context</td>
@@ -126,7 +109,7 @@ Team Label help identify groups within an organization that are responsible for 
 
 ### product
 
-Product label organizes spend to align on the "products" a firm has and help organize application and service that support the product.
+Product label organizes spend to align on the "products" a firm customer consume. This label helps organize applications and services that support the product.
 <table>
 <tr>
 <td>Context</td>
@@ -277,7 +260,7 @@ Service label adds a layer to app/service hierarchy around how firms  organize p
 
 ### component
 
-Component label adds a layer to app/service hierarchy around how firms  organize "Microservice / Component / Function"
+Component label adds a layer to app/service hierarchy around how firms organize "Microservice / Component / Function" that support application or services
 <table>
 <tr>
     <td>Context</td>
@@ -334,5 +317,3 @@ Tech-Stack help bring context of spend to the view of platform or operations by 
     <td>run</td>
 </tr>
 </table>
-
-
